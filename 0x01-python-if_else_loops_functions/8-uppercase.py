@@ -7,7 +7,7 @@ def uppercase(str):
 
         if ((ord(str[i]) > 96) and (ord(str[i]) < 123)):
             ch = ord(str[i]) - 32
-            ch_up += chr(ch) 
+            ch_up += chr(ch)
 
         else:
             ch_up += str[i]
