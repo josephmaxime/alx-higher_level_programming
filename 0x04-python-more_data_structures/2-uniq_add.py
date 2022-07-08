@@ -4,9 +4,9 @@ def uniq_add(my_list=[]):
 
     summ = 0
 
-    l = set(my_list)
+    li = set(my_list)
 
-    for elt in l:
+    for elt in li:
 
         summ += elt
 
