@@ -13,18 +13,19 @@ if __name__ == '__main__':
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
 
-    if operators == "+":
+    else:
+        if operators == "+":
             print("{} {} {} = {}".format(argv[1], argv[2], argv[3],
-                add(argv[1], argv[3])))
-    elif operators == '-':
+                 add(argv[1], argv[3])))
+        elif operators == "-":
             print("{} {} {} = {}".format(argv[1], argv[2], argv[3],
                 sub(argv[1], argv[3])))
-    elif operators == '*':
+        elif operators == "*":
             print("{} {} {} = {}".format(argv[1], argv[2], argv[3],
                 mul(argv[1], argv[3])))
-    elif operators == '/':
+        elif operators == '/':
             print("{} {} {} = {}".format(argv[1], argv[2], arg[3],
                 div(argv[1], argv[3])))
-    else:
+        else:
             print("Unknown operator. Available operators: +, -, * and /")
             exit(1)
