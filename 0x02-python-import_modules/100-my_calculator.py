@@ -14,17 +14,17 @@ if __name__ == '__main__':
         exit(1)
 
     if operators == '+':
-            print("{:d} {:s} {:d} = {:d}".format(sys.argv[1], sys.argv[3],
-                add(sys.argv[1], sys.argv[3])))
+            print("{:d} {:s} {:d} = {:d}".format(argv[1], argv[3],
+                add(argv[1], argv[3])))
     elif operators == '-':
-            print("{:d} {:s} {:d} = {:d}".format(sys.argv[1], sys.argv[3],
-                sub(sys.argv[1], sys.argv[3])))
+            print("{:d} {:s} {:d} = {:d}".format(argv[1], argv[3],
+                sub(argv[1], argv[3])))
     elif operators == '*':
-            print("{:d} {:s} {:d} = {:d}".format(sys.argv[1], sys.argv[3],
-                mul(sys.argv[1], sys.argv[3])))
+            print("{:d} {:s} {:d} = {:d}".format(argv[1], argv[3],
+                mul(argv[1], argv[3])))
     elif operators == '/':
-            print("{:d} {:s} {:d} = {:d}".format(sys.argv[1], sys.arg[3],
-                div(sys.argv[1], sys.argv[3])))
+            print("{:d} {:s} {:d} = {:d}".format(argv[1], arg[3],
+                div(argv[1], argv[3])))
     else:
             print("Unknown operator. Available operators: +, -, * and /")
             exit(1)
