@@ -3,7 +3,8 @@
 
 void print_python_list_info(PyObject *p)
 {
-	PyListObject list_ob;
+	PyListObject *list_ob;
+	struct _typeobject *type;
 	long length;
 	PyObject *object;
 
