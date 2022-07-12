@@ -5,7 +5,7 @@ void print_python_list_info(PyObject *p)
 {
 	PyListObject *list_ob;
 	struct _typeobject *type;
-	long length;
+	long length, i;
 	PyObject *object;
 
 	list_ob = (PyListObject *)p;
