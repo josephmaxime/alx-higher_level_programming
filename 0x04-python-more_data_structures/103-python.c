@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <Python.h>
 
+
+void print_python_bytes(PyObject *p);
 /*
  * print_python_list - print info of list python in C.
  *
@@ -26,7 +28,8 @@ void print_python_list(PyObject *p)
 		object = list_ob->ob_item[i];
 		type = object->ob_type;
 		printf("Element %ld: %s\n", i, type->tp_name);
-
+		if (PyBytes_Check(item))
+			print_python_bytes(item);
 	}
 }
 
