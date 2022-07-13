@@ -28,8 +28,8 @@ void print_python_list(PyObject *p)
 		object = list_ob->ob_item[i];
 		type = object->ob_type;
 		printf("Element %ld: %s\n", i, type->tp_name);
-		if (PyBytes_Check(item))
-			print_python_bytes(item);
+		if (PyBytes_Check(object))
+			print_python_bytes(object);
 	}
 }
 
