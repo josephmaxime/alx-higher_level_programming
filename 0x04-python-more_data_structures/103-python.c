@@ -49,7 +49,7 @@ void print_python_bytes(PyObject *p)
 		return;
 	}
 
-	if (PyBytes_AsStringAndSize(p, &str, &size))
+	if (PyBytes_AsStringAndSize(p, &str, &size) != NULL)
 	{
 		printf("  size: %zd\n", size);
 		printf("  trying string: %s\n", str);
