@@ -23,7 +23,7 @@ void print_python_list(PyObject *p)
 
 	for (i = 0; i < size; i++)
 	{
-		object = list->ob_item[i];
+		object = list_ob->ob_item[i];
 		type = object->ob_type;
 		printf("Element %ld: %s\n", i, type->tp_name);
 
