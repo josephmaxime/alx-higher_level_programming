@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 
-"""0-square Module"""
+"""1-square Module"""
 
 
 class Square:
