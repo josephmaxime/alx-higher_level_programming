@@ -35,8 +35,8 @@ class Square:
 
         if not isinstance(position, tuple):
 
-            if not (isinstance(position[0], int)
-                    and isinstance(position[1], int)):
+            if (not isinstance(position[0], int)
+                and not isinstance(position[1], int)):
 
                 if (position[0] < 0) and (position[1] < 0):
 
@@ -96,14 +96,13 @@ class Square:
 
         """
 
-        if not isinstance(position, tuple):
+        if not (isinstance(position, tuple)
+                and not isinstance(position[0], int)
+                and not isinstance(position[1], int)):
 
-            if not (isinstance(position[0], int)
-                    and isinstance(position[1], int)):
+            if (position[0] < 0) and (position[1] < 0):
 
-                if (position[0] < 0) and (position[1] < 0):
-
-                    raise TypeError("err_position")
+                raise TypeError("err_position")
 
         self.__position = value
 
@@ -126,6 +125,10 @@ class Square:
             print()
 
         else:
+
+            for i in range(self.__position[1]):
+
+                print()
 
             for i in range(ss):
 
