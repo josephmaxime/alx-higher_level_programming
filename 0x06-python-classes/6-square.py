@@ -17,6 +17,7 @@ class Square:
         Args:
 
            size (int): The size of a side of the square.
+           position (int, int): The position of # in square.
 
         """
 
@@ -65,11 +66,10 @@ class Square:
     @size.setter
     def size(self, value):
 
-        """Set the new value of a square
+        """Set the new value of a square size
 
         Args:
-
-            value (int): the new value of the square size.
+           value (int): the new value of the square size.
 
         """
 
@@ -90,7 +90,7 @@ class Square:
 
         Args:
 
-            value (tuple): the new value of position.
+           value (int, int): the new value of position.
 
         """
 
