@@ -9,7 +9,6 @@ the position of square by value of position."""
 class Square:
     """This Class square define a square."""
 
-
     def __init__(self, size=0, position=(0, 0)):
 
         """Initialize variable of the square class
@@ -37,8 +36,8 @@ class Square:
         if not (isinstance(position, tuple) and
                 isinstance(position[0], int) and
                 isinstance(position[1], int) and
-                position[0] < 0 and
-                position[1] < 0 and
+                position[0] >= 0 and
+                position[1] >= 0 and
                 len(position) == 2):
 
             raise TypeError(err_position)
@@ -102,8 +101,8 @@ class Square:
         if not (isinstance(position, tuple) and
                 isinstance(position[0], int) and
                 isinstance(position[1], int) and
-                position[0] < 0 and
-                position[1] < 0 and
+                position[0] >= 0 and
+                position[1] >= 0 and
                 len(position) == 2):
 
             raise TypeError(err_position)
