@@ -1,21 +1,17 @@
 #!/usr/bin/python3
 
-
-"""
-This Module define a square with #.
-"""
+"""This Module define a square with #."""
 
 
 class Square:
 
-    """ This Class square define a square. """
+    """This Class square define a square."""
 
     def __init__(self, size=0, position=(0, 0)):
 
         """Initialize variable of the square class
 
         Args:
-
            size (int): The size of a side of the square.
            position (int, int): The position of # in square.
 
