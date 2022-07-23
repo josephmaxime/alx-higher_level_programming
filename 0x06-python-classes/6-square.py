@@ -9,7 +9,6 @@ the position of square by value of position."""
 class Square:
     """This Class square define a square."""
 
-    err_position = "position must be a tuple of 2 positive integers"
 
     def __init__(self, size=0, position=(0, 0)):
 
@@ -22,6 +21,8 @@ class Square:
                 initialize by (0, 0).
 
         """
+
+        err_position = "position must be a tuple of 2 positive integers"
 
         if not isinstance(size, int):
 
@@ -95,6 +96,8 @@ class Square:
            value (int, int): the new value of position.
 
         """
+
+        err_position = "position must be a tuple of 2 positive integers"
 
         if not (isinstance(position, tuple) and
                 isinstance(position[0], int) and
