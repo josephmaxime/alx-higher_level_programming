@@ -9,6 +9,8 @@ the position of square by value of position."""
 class Square:
     """This Class square define a square."""
 
+    err_position = "position must be a tuple of 2 positive integers"
+
     def __init__(self, size=0, position=(0, 0)):
 
         """Initialize variable of the square class
@@ -38,8 +40,7 @@ class Square:
 
                 if (position[0] < 0) and (position[1] < 0):
 
-                    raise TypeError("position must
-                                    be a tuple of 2 positive integers")
+                    raise TypeError(err_position)
 
         self.__position = position
 
@@ -102,8 +103,7 @@ class Square:
 
                 if (position[0] < 0) and (position[1] < 0):
 
-                    raise TypeError("position must be a
-                                    tuple of 2 positive integers")
+                    raise TypeError(err_position)
 
     def my_print(self):
 
