@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
-"""This Module define a square with #."""
+"""This Module define a square
+where the size is represented by # and
+the position of square by value of position."""
 
 
 class Square:
@@ -12,8 +14,10 @@ class Square:
         """Initialize variable of the square class
 
         Args:
-           size (int): The size of a side of the square.
-           position (int, int): The position of # in square.
+           size (int): The size of a side of square.
+                initialize by 0.
+           position (int, int): The position of square.
+                initialize by (0, 0).
 
         """
 
@@ -65,7 +69,8 @@ class Square:
         """Set the new value of a square size
 
         Args:
-           value (int): the new value of the square size.
+           value (int): the new value of the square size
+                 value >= 0.
 
         """
 
