@@ -105,7 +105,7 @@ class Square:
 
                     raise TypeError(err_position)
 
-       self.__position = value
+        self.__position = value
 
     def my_print(self):
 
