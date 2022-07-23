@@ -62,7 +62,7 @@ class Square:
 
         """Retreive the position of size"""
 
-        return self.__size
+        return self.__position
 
     @size.setter
     def size(self, value):
@@ -104,6 +104,8 @@ class Square:
                 if (position[0] < 0) and (position[1] < 0):
 
                     raise TypeError(err_position)
+
+       self.__position = value
 
     def my_print(self):
 
