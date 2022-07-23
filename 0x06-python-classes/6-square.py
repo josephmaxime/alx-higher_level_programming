@@ -40,7 +40,7 @@ class Square:
 
                 if (position[0] < 0) and (position[1] < 0):
 
-                    raise TypeError(err_position)
+                    raise TypeError("err_position")
 
         self.__position = position
 
@@ -103,7 +103,7 @@ class Square:
 
                 if (position[0] < 0) and (position[1] < 0):
 
-                    raise TypeError(err_position)
+                    raise TypeError("err_position")
 
         self.__position = value
 
@@ -131,7 +131,7 @@ class Square:
 
                 for p in range(pst):
 
-                    print("_", end="")
+                    print(end=" ")
 
                 for j in range(ss):
 
