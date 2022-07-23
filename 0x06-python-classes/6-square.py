@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 
+
 """This Module define a square
 where the size is represented by # and
 the position of square by value of position."""
 
 
 class Square:
-
     """This Class square define a square."""
 
     def __init__(self, size=0, position=(0, 0)):
