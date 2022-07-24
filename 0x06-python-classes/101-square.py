@@ -172,6 +172,8 @@ class Square:
 
                     ch += "#"
 
-                ch += "\n"
+                if i < ss - 1:
+
+                    ch += "\n"
 
         return ch
