@@ -157,6 +157,7 @@ class Square:
             ch += "\n"
 
         else:
+
             for i in range(self.__position[1]):
 
                 ch += "\n"
@@ -170,7 +171,5 @@ class Square:
                 for j in range(ss):
 
                     ch += "#"
-
-                ch += "\n"
 
         return ch
