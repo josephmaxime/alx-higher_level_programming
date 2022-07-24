@@ -154,7 +154,7 @@ class Square:
 
         if ss == 0:
 
-            ch += "\n"
+            ch += ""
 
         else:
 
@@ -171,5 +171,7 @@ class Square:
                 for j in range(ss):
 
                     ch += "#"
+
+                ch += "\n"
 
         return ch
