@@ -94,5 +94,7 @@ class Rectangle:
                 for i in range(len_w):
                     str_ += "#"
 
-                str_ += "\n"
+                if (j < len_h - 1):
+                    str_ += "\n"
+
             return str_
