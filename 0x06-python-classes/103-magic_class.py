@@ -2,9 +2,9 @@
 """ Magic calculator radius module"""
 import math
 
+
 class MagicClass:
     """This class define a cyrcle"""
-
     def __init__(self, radius=0):
         """Initialize variable"""
         self.__radius = 0
