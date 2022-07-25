@@ -86,15 +86,14 @@ class Rectangle:
         len_h = self.__height
 
         if (len_w == 0) and (len_h == 0):
-            return ""
-
-        else:
-            for j in range(len_h):
-
-                for i in range(len_w):
-                    str_ += "#"
-
-                if (j < len_h - 1):
-                    str_ += "\n"
-
             return str_
+
+        for j in range(len_h):
+
+            for i in range(len_w):
+                str_ += "#"
+
+            if (j < len_h - 1):
+                str_ += "\n"
+
+        return str_
