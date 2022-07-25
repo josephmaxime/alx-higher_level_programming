@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ Magic calculator radius module"""
-
 import math
+
 class MagicClass:
     """This class define a cyrcle"""
 
