@@ -95,7 +95,7 @@ class Rectangle:
         for j in range(len_h):
 
             for i in range(len_w):
-                str_ += "#"
+                str_ += str(self.print_symbol)
 
             if (j < len_h - 1):
                 str_ += "\n"
