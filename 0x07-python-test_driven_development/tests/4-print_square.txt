@@ -14,11 +14,10 @@ First importing the function from the module:
 Testing module without error
 
         >>> print_square(4)
-        #####
-        #####
-	#####
-	#####
-	#####
+        ####
+        ####
+	####
+	####
 
         >>> print_square(0)
 
@@ -43,7 +42,6 @@ Testing module with error
        TypeError: size must be an integer
 
        >>> print_square(-1)
-
        Traceback (most recent call last):
        ...
        ValueError: size must be >= 0
