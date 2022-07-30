@@ -18,9 +18,9 @@ Testing the module without errorr
         Lorem ipsum dolor sit amet, consectetur adipiscing elit
 
         >>> text_indentation("   My name is: Tex.   ")
-	My name is
+	My name is:
         <BLANKLINE>
-        Tex
+        Tex.
 	<BLANKLINE>
 
         >>> text_indentation()
