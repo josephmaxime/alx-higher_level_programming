@@ -1,15 +1,8 @@
-==================
-Add integer test.
-==================
+The ```0-add_integer module
+======================
 
-Numbers
-=======
-
-``add_integer()`` returns the somme of its arguments.  For numbers,
-
-that value is equivalent to using the ``+`` operator.
-
-::
+Using ``matrix_divided``
+-------------------
 
     >>> add_integer = __import__("0-add_integer").add_integer
 
@@ -22,7 +15,7 @@ that value is equivalent to using the ``+`` operator.
 It also works with floating-point and negatives values.
 
     >>> add_integer(2.0, 3)
-    6
+    5
 
     >>> add_integer(18, -2)
     16
