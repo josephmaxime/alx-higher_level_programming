@@ -31,4 +31,4 @@ def text_indentation(text):
                 space = 0
 
             else:
-                print(a, end="")
+                print(letter, end="")
