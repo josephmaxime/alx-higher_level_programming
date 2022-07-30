@@ -26,6 +26,11 @@ Non-Numbers
 Because ``+`` is only defined on data types numbers, not
 for concatenate string or anothertype.
 
+    >>> add_integer(18, "test")
+    Traceback (most recent call last):
+	...
+    TypeError: b must be an integer
+
     >>> add_integer(8, [2, 5])
     Traceback (most recent call last):
 	...
