@@ -9,14 +9,14 @@ Import module first
 Test module without error
 
     >>> say_my_name("MANGA", "Maxime")
-    My name is MANGA MAxime
+    My name is MANGA Maxime
 
     >>> say_my_name("ABOMO")
     My name is ABOMO
 
 Test with the error
 
-    >>> say_my_name([], "Noussi")
+    >>> say_my_name([], "Max")
     Traceback (most recent call last):
 	...
     TypeError: first_name must be a string
