@@ -12,7 +12,7 @@ Test module without error
     My name is MANGA Maxime
 
     >>> say_my_name("ABOMO")
-    My name is ABOMO
+    My name is ABOMO 
 
 Test with the error
 
