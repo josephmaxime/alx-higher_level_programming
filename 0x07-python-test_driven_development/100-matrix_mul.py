@@ -58,7 +58,8 @@ def matrix_mul(m_a, m_b):
 def mult(m_a, m_b):
     "This is the function that multiply two matrix"
 
-    res = [[0 for x in range(len(m_b))] for y in range(len(m_a))]
+    res = [[0 for x in range(len(m_b[0]))] for y in range(len(m_a[0]))]
+    print(res)
 
     for i in range(len(m_a)):
 
