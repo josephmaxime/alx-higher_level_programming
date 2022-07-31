@@ -33,6 +33,7 @@ def matrix_mul(m_a, m_b):
     if (m_b == []) or (m_b == [[]]):
         raise ValueError("m_b can't be empty")
 
+    size_b = 0
     for elt in m_b:
         if type(elt) is not list:
             raise TypeError("m_b must be a list")
@@ -41,10 +42,10 @@ def matrix_mul(m_a, m_b):
             if (type(i) is not int) and (type(i) is not float):
                 raise TypeError("m_b should contain only integers or floats")
 
-        if size == 0:
-            size = len(elt)
+        if size_b == 0:
+            siz_b = len(elt)
 
-        if size != len(elt):
+        if size_b != len(elt):
             raise TypeError("each row of m_b must be of the same size")
 
     if size_t != len(m_b):
