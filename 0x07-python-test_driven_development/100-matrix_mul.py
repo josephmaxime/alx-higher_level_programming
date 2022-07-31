@@ -24,7 +24,7 @@ def matrix_mul(m_a, m_b):
             size = len(elt)
             size_t = size
 
-        elif size != len(elt):
+        if size != len(elt):
             raise TypeError("each row of m_a must be of the same size")
 
     if type(m_b) is not list:
@@ -44,7 +44,7 @@ def matrix_mul(m_a, m_b):
         if size == 0:
             size = len(elt)
 
-        elif size != len(elt):
+        if size != len(elt):
             raise TypeError("each row of m_b must be of the same size")
 
     if size_t != len(m_b):
