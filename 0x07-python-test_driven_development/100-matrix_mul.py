@@ -64,7 +64,7 @@ def mult(m_a, m_b):
 
         for j in range(len(m_b[0])):
 
-            for k in range(len(m_b[0])):
+            for k in range(len(m_b)):
 
                 res[i][j] += m_a[i][k] * m_b[k][j]
 
