@@ -22,6 +22,7 @@ def matrix_mul(m_a, m_b):
 
         if size == 0:
             size = len(elt)
+            size_t = size
 
         elif size != len(elt):
             raise TypeError("each row of m_a must be of the same size")
@@ -46,13 +47,12 @@ def matrix_mul(m_a, m_b):
         elif size != len(elt):
             raise TypeError("each row of m_b must be of the same size")
 
-    m_x = mult(m_a, m_b)
-    if m_x:
-        return m_x
-
-    else:
+    if size_t != len(m_b):
         raise ValueError("m_a and m_b can't be multiplied")
 
+    m_x = mult(m_a, m_b)
+
+    return m_x
 
 def mult(m_a, m_b):
     "This is the function that multiply two matrix"
