@@ -18,14 +18,14 @@ Empty parameter
     >>> matrix_mul([[]], [[1, 2], [5, 6]])
     Traceback (most recent call last):
         ...
-    ValueError: m_b can't be empty
+    ValueError: m_a can't be empty
 
 Matrix must be a matrix (list of lists) of integrs/floats
 
     >>> matrix_mul("Matri", [[2, 6]])
     Traceback (most recent call last):
 	...
-    TypeError: m_a must be a list of lists
+    TypeError: m_a must be a list
 
 Each row of the matrix must have the same size
 
