@@ -55,6 +55,7 @@ def matrix_mul(m_a, m_b):
 
     return m_x
 
+
 def mult(m_a, m_b):
     "This is the function that multiply two matrix"
 
