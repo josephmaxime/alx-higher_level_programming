@@ -39,7 +39,7 @@ Checking for one negative number:
 	 >>> l.print_sorted()
 	 [-1, 5, 24, 28]
 	 >>> print(l)
-	 [28, 24 -1, 5]
+	 [28, 24, -1, 5]
 
 Checking for too many arguments:
 
