@@ -9,10 +9,10 @@ class Rectangle(BaseGeometry):
     """ Rectangle class inherite BaseGeometry class"""
 
     def __init__(self, width, height):
-       """Initialize attributes"""
+        """Initialize attributes"""
 
-       self.integer_validator("width", width)
-       self.__width = width
+        self.integer_validator("width", width)
+        self.__width = width
 
-       self.integer_validator("height", height)
-       self.__height = height
+        self.integer_validator("height", height)
+        self.__height = height
