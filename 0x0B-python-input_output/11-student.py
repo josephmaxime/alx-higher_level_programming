@@ -26,11 +26,10 @@ class Student:
 
     def reload_from_json(self, json):
         """function that replaces all attributes of the Student instance"""
-
-         for key in json:
+        for key in json:
 
             try:
                 setattr(self, key, json[key])
 
-            except:
+            except Exception:
                 pass
