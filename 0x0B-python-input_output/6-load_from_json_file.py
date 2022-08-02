@@ -8,7 +8,7 @@ def load_from_json_file(filename):
     from json representation file
     """
 
-    with open(filename, 'w', encoding="utf-8") as f:
+    with open(filename, 'r', encoding="utf-8") as f:
 
         obj_ = json.load(f)
 
