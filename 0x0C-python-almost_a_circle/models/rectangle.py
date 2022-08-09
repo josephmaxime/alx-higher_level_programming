@@ -83,3 +83,19 @@ class Rectangle(Base):
         """ Area value of the rectangle """
 
         return (self.__width * self.__height)
+
+    def display(self):
+        """Prints in stdout the square with the character #
+        if size is equal to 0, print an empty line.
+
+        """
+        ss_w = self.__width
+        ss_h = self.__height
+
+        for i in range(ss_h):
+
+            for j in range(ss_w):
+
+                print("#", end="")
+
+            print()
