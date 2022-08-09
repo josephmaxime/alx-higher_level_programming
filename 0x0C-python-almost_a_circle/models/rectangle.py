@@ -10,8 +10,8 @@ class Rectangle(Base):
         """Initialize paramater"""
 
         super().__init__(id)
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
         self.x = x
         self.y = y
 
@@ -48,7 +48,6 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, value):
-
         """set value of height"""
         if type(value) is not int:
             raise TypeError("height must be an integer")
